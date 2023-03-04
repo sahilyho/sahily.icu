@@ -1,0 +1,161 @@
+/** @format */
+@import url("https://fonts.googleapis.com/css2?family=Zeyada&family=Kanit:wght@300&display=swap");
+
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--sand: #ffd4b2;
+	--sun: #c4ba79;
+	--sky: #86c8bc;
+	--titleFont: #67672c;
+	--lighterFont: #020202;
+	--silver: #ebeae6;
+}
+
+/* navbar */
+body {
+	background-color: var(--silver);
+	/* overflow: hidden; */
+}
+
+main {
+	width: 1915px;
+}
+
+.navbar-inner {
+	background-image: url("/static/images/strip.png");
+	background-size: cover;
+	min-height: 100%;
+}
+
+.navbar-custom {
+	height: 140px;
+	box-shadow: 2px 2px 5px var(--sun);
+}
+
+.navbar-text {
+	font-family: "Kanit";
+}
+
+.nav-item {
+	font-family: "Kanit";
+	font-size: 100px;
+	font-weight: bolder;
+	margin-left: 3rem;
+	text-shadow: 2px 2px 5px var(--titleFont);
+}
+
+#profile {
+	position: absolute;
+	opacity: 15%;
+	min-width: 100%;
+	min-height: 100%;
+	z-index: -30;
+}
+
+@media only screen and (max-width: 1536px) {
+	* {
+		box-sizing: border-box;
+	}
+
+	:root {
+		--titleFont: #67672c;
+	}
+	body {
+		background-color: var(--silver);
+		/* overflow: hidden; */
+	}
+
+	main {
+		width: 1536px;
+	}
+
+	/* /* navbar */
+
+	.navbar-inner {
+		background-image: url("/static/images/strip.png");
+		background-size: cover;
+		min-height: 100%;
+	}
+
+	.navbar-custom {
+		height: 125px;
+		box-shadow: 2px 2px 5px var(--sun);
+	}
+
+	.navbar-text {
+		font-family: "Kanit";
+	}
+
+	.nav-item {
+		font-family: "Kanit";
+		font-size: 40px;
+		font-weight: bolder;
+		margin-left: 3rem;
+		text-shadow: 2px 2px 5px var(--titleFont);
+	}
+
+	#profile {
+		position: absolute;
+		opacity: 15%;
+		min-width: 100%;
+		min-height: 100%;
+		z-index: -30;
+	}
+}
+
+/* iPhone screen */
+
+@media only screen and (max-width: 844px) {
+	:root {
+		--sand: #ffd4b2;
+		--sun: #c4ba79;
+		--sky: #86c8bc;
+		--titleFont: #67672c;
+		--lighterFont: #020202;
+		--silver: #ebeae6;
+	}
+
+	/* navbar */
+	body {
+		background-color: var(--silver);
+		/* overflow: hidden; */
+	}
+
+	main {
+		width: 1200px;
+	}
+
+	.navbar-inner {
+		background-image: url("/static/images/strip.png");
+		background-size: cover;
+		min-height: 100%;
+	}
+
+	.navbar-custom {
+		height: 140px;
+		box-shadow: 2px 2px 5px var(--sun);
+	}
+
+	.navbar-text {
+		font-family: "Kanit";
+	}
+
+	.nav-item {
+		font-family: "Kanit";
+		font-size: 100px;
+		font-weight: bolder;
+		margin-left: 3rem;
+		text-shadow: 2px 2px 5px var(--titleFont);
+	}
+
+	#profile {
+		position: absolute;
+		opacity: 15%;
+		min-width: 100%;
+		min-height: 100%;
+		z-index: -30;
+	}
+} ;

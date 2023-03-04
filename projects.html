@@ -1,0 +1,150 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sahily Ho</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="static/css/project.css" />
+		<link rel="icon" href="static/images/favicon.ico" />
+	</head>
+	<body>
+		<main>
+			<nav
+				class="navbar navbar-custom navbar-expand-lg navbar-inner navbar-dark bg-light"
+			>
+				<div class="container-fluid">
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarText"
+						aria-controls="navbarText"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarText">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="index.html"
+									>Home</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" href="projects.html">Projects</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="contact.html">Contact Me</a>
+							</li>
+						</ul>
+						<span class="navbar-text text-dark"> sahilyho@gmail.com </span>
+					</div>
+				</div>
+			</nav>
+			<img
+				id="profile"
+				src="static/images/half_profile.png"
+				alt="Sahily Ho profile picture"
+			/>
+			<div class="examples">
+				<div class="row">
+					<div class="col-md-8" id="project_1">
+						<img
+							src="/static/images/braille_example.png"
+							alt="Braille translator"
+						/>
+					</div>
+					<div class="col-md-4">
+						<h2>Braille Translator</h2>
+						<i class="fa-brands fa-python"></i>
+						<p style="width: 70%">
+							The Braille Translator is a software application that uses Unified
+							English Braille orthography rules to translate text into Braille.
+							It is written in Python and uses Tkinter for the graphical user
+							interface. The translator is capable of handling a wide range of
+							text, including numbers, punctuation, and special characters. With
+							the Braille Translator, users can easily and accurately translate
+							text into Braille, making it accessible to visually impaired
+							individuals.
+						</p>
+						<a href="#" class="btn btn-primary bg-dark"
+							><i class="fa-brands fa-github"></i> Github Files</a
+						>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-8" id="project_2">
+						<img src="/static/images/eggs_example.png" alt="Egg game" />
+					</div>
+					<div class="col-md-4">
+						<h2>Egg Game</h2>
+						<i class="fa-brands fa-python"></i>
+						<p style="width: 70%">
+							The Egg Game showcases easy-to-read Python classes and loops with
+							Turtle graphics. The rules are easy: How many red eggs can the
+							user drag into the basket within 60 seconds? However, only the red
+							eggs are allowed in the basket. To create a red egg, catch the
+							white square with an egg that is NOT red. If the white square
+							catches a red egg before it's placed in the basket, it's game
+							over.
+						</p>
+						<a href="#" class="btn btn-primary bg-dark"
+							><i class="fa-brands fa-github"></i> Github Files</a
+						>
+					</div>
+				</div>
+			</div>
+			<nav
+				class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-bottom d-flex justify-content-center"
+			>
+				<div class="container-fluid dropdown dropup">
+					<div class="navbar-collapse collapse justify-content-center">
+						<ul class="navbar-nav">
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									id="navbarDropdown"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+								>
+									Go To Project
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<li>
+										<a class="dropdown-item" href="#project_1"
+											>Braille Translator</a
+										>
+									</li>
+									<li>
+										<a class="dropdown-item" href="#project_2">Egg Game</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</main>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

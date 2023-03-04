@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "mdb-ui-kit": "^6.2.0",
+    "mdbootstrap": "^4.20.0",
+    "php": "^1.0.2"
+  }
+}

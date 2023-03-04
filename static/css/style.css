@@ -1,0 +1,393 @@
+/** @format */
+@import url("https://fonts.googleapis.com/css2?family=Zeyada&family=Kanit:wght@300&display=swap");
+
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--sand: #ffd4b2;
+	--sun: #c4ba79;
+	--sky: #86c8bc;
+	--titleFont: #67672c;
+	--lighterFont: #020202;
+	--silver: #ebeae6;
+}
+
+/* navbar */
+body {
+	background-color: var(--silver);
+	overflow: hidden;
+}
+
+main {
+	width: 1915px;
+}
+
+.navbar-inner {
+	background-image: url("/static/images/strip.png");
+	background-size: cover;
+	min-height: 100%;
+}
+
+.navbar-custom {
+	height: 140px;
+	box-shadow: 2px 2px 5px var(--sun);
+}
+
+.navbar-text {
+	font-family: "Kanit";
+}
+
+.nav-item {
+	font-family: "Kanit";
+	font-size: 100px;
+	font-weight: bolder;
+	margin-left: 3rem;
+	text-shadow: 2px 2px 5px var(--titleFont);
+}
+
+/* title */
+
+#title {
+	display: inline-block;
+	width: 30%;
+	height: 300px;
+	margin-top: 70px;
+	margin-left: 70px;
+}
+
+h1 {
+	display: inline-block;
+	font-family: "Zeyada", cursive;
+	font-size: 100px;
+	color: var(--titleFont);
+	height: 90px;
+	margin-bottom: 52px;
+}
+
+#developer {
+	font-family: "Kanit";
+	color: var(--lighterFont);
+	font-size: 32px;
+}
+
+#profile {
+	position: absolute;
+	opacity: 15%;
+	min-width: 100%;
+	min-height: 100%;
+	z-index: -30;
+}
+
+#profile_sml {
+	display: inline-block;
+	opacity: 20%;
+	z-index: -5;
+}
+
+/* pyramid */
+
+#pyramid {
+	float: right;
+	margin-top: 18rem;
+}
+
+.pyramid_click:hover {
+	width: 500px;
+	height: 300px;
+	cursor: pointer;
+}
+
+.pyramid_click {
+	z-index: 5;
+}
+
+/* Affects each sample individually */
+.sample {
+	max-width: 250px;
+	margin-top: 40px;
+	margin-bottom: 18px;
+	max-height: none;
+	box-shadow: 20px 2px 10px var(--sun);
+}
+
+/* Affects all samples */
+.samples {
+	float: right;
+	margin-right: 0rem;
+}
+
+.hidden {
+	opacity: 0%;
+}
+
+.visible {
+	opacity: 100%;
+}
+
+.objects {
+	width: 2000px;
+}
+
+/* Computer screen */
+
+@media only screen and (max-width: 1536px) {
+	* {
+		box-sizing: border-box;
+	}
+
+	:root {
+		--titleFont: #67672c;
+	}
+	body {
+		background-color: var(--silver);
+		overflow: hidden;
+	}
+
+	main {
+		width: 1536px;
+	}
+
+	/* /* navbar */
+
+	.navbar-inner {
+		background-image: url("/static/images/strip.png");
+		background-size: cover;
+		min-height: 100%;
+	}
+
+	.navbar-custom {
+		height: 125px;
+		box-shadow: 2px 2px 5px var(--sun);
+	}
+
+	.navbar-text {
+		font-family: "Kanit";
+	}
+
+	.nav-item {
+		font-family: "Kanit";
+		font-size: 40px;
+		font-weight: bolder;
+		margin-left: 3rem;
+		text-shadow: 2px 2px 5px var(--titleFont);
+	}
+
+	/* title */
+
+	#title {
+		display: inline-block;
+		width: 30%;
+		height: 300px;
+		margin-top: 0px;
+		margin-left: 70px;
+	}
+
+	h1 {
+		display: inline-block;
+		font-family: "Zeyada", cursive;
+		font-size: 100px;
+		color: var(--titleFont);
+		height: 90px;
+		margin-bottom: 25px;
+	}
+
+	#developer {
+		font-family: "Kanit";
+		color: var(--lighterFont);
+		font-size: 30px;
+	}
+
+	#profile {
+		position: absolute;
+		opacity: 15%;
+		min-width: 100%;
+		min-height: 100%;
+		z-index: -30;
+	}
+
+	#profile_sml {
+		display: inline-block;
+		opacity: 20%;
+		z-index: -5;
+	}
+
+	/* pyramid */
+
+	#pyramid {
+		z-index: 5;
+		float: right;
+		margin-top: 15rem;
+		margin-left: 0;
+	}
+
+	.pyramid_click:hover {
+		width: 500px;
+		height: 300px;
+		cursor: pointer;
+	}
+
+	.pyramid_click {
+		z-index: 5;
+	}
+
+	/* Affects each sample individually */
+	.sample {
+		box-shadow: 20px 2px 10px var(--sun);
+	}
+
+	/* Affects all samples */
+	.samples {
+		float: right;
+		margin-right: 20rem;
+	}
+
+	.hidden {
+		opacity: 0%;
+	}
+
+	.visible {
+		opacity: 100%;
+	}
+
+	.objects {
+		width: 2000px;
+	}
+}
+
+/* iPhone screen */
+
+@media only screen and (max-width: 844px) {
+	:root {
+		--sand: #ffd4b2;
+		--sun: #c4ba79;
+		--sky: #86c8bc;
+		--titleFont: #67672c;
+		--lighterFont: #020202;
+		--silver: #ebeae6;
+	}
+
+	/* navbar */
+	body {
+		background-color: var(--silver);
+		overflow: hidden;
+	}
+
+	main {
+		width: 1200px;
+	}
+
+	.navbar-inner {
+		background-image: url("/static/images/strip.png");
+		background-size: cover;
+		min-height: 100%;
+	}
+
+	.navbar-custom {
+		height: 140px;
+		box-shadow: 2px 2px 5px var(--sun);
+	}
+
+	.navbar-text {
+		font-family: "Kanit";
+	}
+
+	.nav-item {
+		font-family: "Kanit";
+		font-size: 100px;
+		font-weight: bolder;
+		margin-left: 3rem;
+		text-shadow: 2px 2px 5px var(--titleFont);
+	}
+
+	/* title */
+
+	#title {
+		display: inline-block;
+		width: 40%;
+		height: 500px;
+		margin-top: 70px;
+		margin-left: 70px;
+	}
+
+	h1 {
+		display: inline-block;
+		font-family: "Zeyada", cursive;
+		font-size: 250px;
+		width: 844px;
+		color: var(--titleFont);
+		height: 90px;
+		margin-bottom: 52px;
+		margin-left: 6rem;
+	}
+
+	#developer {
+		font-family: "Kanit";
+		color: var(--lighterFont);
+		font-size: 70px;
+		width: 844px;
+		margin-top: 15rem;
+		margin-left: 10rem;
+	}
+
+	#profile {
+		position: absolute;
+		opacity: 15%;
+		min-width: 100%;
+		min-height: 100%;
+		z-index: -30;
+	}
+
+	#profile_sml {
+		display: block;
+		opacity: 20%;
+		z-index: -5;
+		float: right;
+	}
+
+	/* pyramid */
+
+	#pyramid {
+		margin-bottom: 0;
+		z-index: 5;
+		float: none;
+		margin-left: 26rem;
+		margin-top: 30rem;
+	}
+
+	.pyramid_click:hover {
+		cursor: none;
+	}
+
+	.pyramid_click {
+		z-index: 5;
+	}
+
+	/* Affects each sample individually */
+	.sample {
+		max-width: 300px;
+		margin-top: 0px;
+		margin-left: 3rem;
+	}
+
+	/* Affects all samples */
+	.samples {
+		float: right;
+		display: inline-flex;
+		margin-top: 10rem;
+		margin-right: 60rem;
+	}
+
+	.hidden {
+		opacity: 0%;
+	}
+
+	.visible {
+		opacity: 100%;
+	}
+
+	.objects {
+		width: 2000px;
+	}
+} ;
