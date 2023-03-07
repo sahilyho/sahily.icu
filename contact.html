@@ -89,6 +89,7 @@
 								name="contact-form"
 								action="mail.php"
 								method="POST"
+								onsubmit="return validateForm()"
 							>
 								<!--Grid row-->
 								<div class="row">
@@ -175,7 +176,7 @@
 							</form>
 
 							<div class="text-center text-md-left">
-								<a class="btn btn-primary" onclick="validateForm();">Send</a>
+								<a class="btn btn-primary" onclick="validateForm()">Send</a>
 							</div>
 							<div class="status"></div>
 						</div>
@@ -196,36 +197,38 @@
 				<!--Section: Contact v.2-->
 			</div>
 		</main>
+		<!-- SCRIPTS -->
+		<!-- JQuery -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<!-- Bootstrap tooltips -->
 		<script
 			type="text/javascript"
-			src="node_modules/mdbootstrap/js/jquery.min.js"
+			src="https://unpkg.com/@popperjs/core@2"
 		></script>
+		<!-- Bootstrap core JavaScript -->
 		<script
-			type="text/javascript"
-			src="node_modules/mdbootstrap/js/popper.min.js"
+			src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"
+			integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
 		></script>
+		<!-- MDB core JavaScript -->
 		<script
-			type="text/javascript"
-			src="node_modules/mdbootstrap/js/bootstrap.min.js"
-		></script>
-		<script
-			type="text/javascript"
-			src="node_modules/mdbootstrap/js/mdb.min.js"
-		></script>
-		<!-- MDB -->
-		<script
-			type="text/javascript"
 			src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"
+			integrity="sha512-ec1IDrAZxPSKIe2wZpNhxoFIDjmqJ+Z5SGhbuXZrw+VheJu2MqqJfnYsCD8rf71sQfKYMF4JxNSnKCjDCZ/Hlw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
 		></script>
+		<!--Custom scripts-->
 		<script>
 			function validateForm() {
-				document.querySelector(".status").innerHTML = "Sending...";
+				document.getElementById("status").innerHTML = "Sending...";
 				formData = {
 					name: $("input[name=name]").val(),
 					email: $("input[name=email]").val(),
 					subject: $("input[name=subject]").val(),
 					message: $("textarea[name=message]").val(),
-					spamQuestion: $("input[name=spam-question]").val(),
+					spamQuestion: $("textarea[name=spam-question]").val(),
 				};
 
 				$.ajax({
