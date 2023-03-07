@@ -2,6 +2,7 @@
   "dependencies": {
     "mdb-ui-kit": "^6.2.0",
     "mdbootstrap": "^4.20.0",
+    "netlify": "^13.1.2",
     "php": "^1.0.2"
   }
 }
