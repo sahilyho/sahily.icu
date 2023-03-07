@@ -178,7 +178,7 @@
 							<div class="text-center text-md-left">
 								<a class="btn btn-primary" onclick="validateForm()">Send</a>
 							</div>
-							<div class="status"></div>
+							<div class="status" id="status"></div>
 						</div>
 						<!--Grid column-->
 
@@ -218,7 +218,7 @@
 					email: $("input[name=email]").val(),
 					subject: $("input[name=subject]").val(),
 					message: $("textarea[name=message]").val(),
-					spamQuestion: $("textarea[name=spam-question]").val(),
+					spamQuestion: $("input[name=spam-question]").val(),
 				};
 
 				$.ajax({
