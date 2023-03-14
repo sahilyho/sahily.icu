@@ -12,10 +12,10 @@ const userInfo = {
 	videogames: "",
 };
 const userMessage = [
-	{ message: "hi", answer: "Hi there! How can I help you today?" },
 	{ message: "cry", answer: "Wahhhhhhhhhhh :(. So sad." },
-	{ message: "I'm dying", answer: "Wahhhhhhhhhhh :(. So sad." },
 	{ message: "hello", answer: "Hello! What can I do for you?" },
+	{ message: "red or black?", answer: "Black." },
+	{ message: "should I buy?", answer: "I can't give you advice on that." },
 	{ message: "hey", answer: "Hey there! How can I assist you?" },
 	{ message: "you are stupid", answer: "I'm not a robot anymore. I'm stupid." },
 	{
