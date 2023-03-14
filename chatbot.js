@@ -1,20 +1,10 @@
-/** @format */
-fetch('http://localhost:3000/projects.html', {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json'
-  },
-  body: JSON.stringify({ message: 'Hello' })
-})
-.then(response => response.json())
-.then(data => {
-  // Handle the response data here
-  console.log(data);
-})
-.catch(error => console.error(error));
+
 const sendBtn = document.getElementById("sendBtn");
 const textbox = document.getElementById("textbox");
 const chatContainer = document.getElementById("chatContainer");
+//no need to hide these.
+const weather_api_key = "357a0df1290d1a9c1ccd1089c4da32ec";
+const stock_api_key = "4a228a53e5c941c78e529954bc69edc5";
 
 let user = { message: "" };
 const userInfo = {
