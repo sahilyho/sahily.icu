@@ -7,6 +7,33 @@
       <excludeFolder url="file://$MODULE_DIR$/node_modules/human-signals/build" />
       <excludeFolder url="file://$MODULE_DIR$/node_modules/mdb-ui-kit/src/js/bootstrap/dist" />
       <excludeFolder url="file://$MODULE_DIR$/node_modules/mdb-ui-kit/src/js/mdb/perfect-scrollbar/lib" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/@netlify/open-api/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/abort-controller/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/body-parser/node_modules/qs/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/body-parser/node_modules/qs/lib" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/body-parser/lib" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/commonjs/lib" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/cors/lib" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/data-uri-to-buffer/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/depd/lib" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/dotenv/lib" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/event-target-shim/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/express/node_modules/body-parser/lib" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/express/node_modules/qs/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/express/node_modules/qs/lib" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/express/lib" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/iconv-lite/lib" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/ipaddr.js/lib" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/micro-api-client/lib" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/negotiator/lib" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/netlify/lib" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/object.assign/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/omit.js/lib" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/qs/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/qs/lib" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/readable-stream/lib" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/test/lib" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/web-streams-polyfill/dist" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
