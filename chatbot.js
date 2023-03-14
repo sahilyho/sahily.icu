@@ -233,7 +233,7 @@ async function userSays(message) {
 	userIcon.classList.add("fa-solid", "fa-user");
 
 	el.innerHTML =
-		"<span><i class='fa-solid fa-robot'></i>" +
+		"<span><i class='fa-solid fa-user'></i>" +
 		" " +
 		"<span style=" +
 		"<span style='margin-top: 10px; padding: 10px'>" +
