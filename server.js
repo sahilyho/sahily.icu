@@ -19,7 +19,10 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'projects.html'));
 });
 
-// Set up your API routes here
+// Route to handle POST requests to /predict
+app.post('/predict', (req, res) => {
+  // Code to handle predictions goes here
+});
 
 const port = process.env.PORT || 3000;
 
