@@ -15,7 +15,7 @@ app.use(cors());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Route to serve the index.html file
-app.get('/', (req, res) => {
+app.get('/projects.html', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'projects.html'));
 });
 

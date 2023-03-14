@@ -4,7 +4,7 @@ fetch('http://localhost:3000/predict', {
   headers: {
     'Content-Type': 'application/json'
   },
-  body: JSON.stringify({ message: 'Hello' }) // Replace with your message
+  body: JSON.stringify({ message: 'Hello' })
 })
 .then(response => response.json())
 .then(data => {
