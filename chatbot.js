@@ -1,5 +1,5 @@
 /** @format */
-
+require("dotenv").config();
 const sendBtn = document.getElementById("sendBtn");
 const textbox = document.getElementById("textbox");
 const chatContainer = document.getElementById("chatContainer");
@@ -259,7 +259,7 @@ function processUserInput(e) {
 		analyzeMessage();
 	}
 }
-WEATHER_API_KEY = "357a0df1290d1a9c1ccd1089c4da32ec";
+const weather_api_key = process.env.WEATHER_API_KEY;
 // Get the weather
 async function getWeather() {
 	try {
@@ -267,7 +267,7 @@ async function getWeather() {
 		const lat = coords.latitude;
 		const lon = coords.longitude;
 		const response = await fetch(
-			`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${WEATHER_API_KEY}`
+			`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${weather_api_key}`
 		);
 		const data = await response.json();
 		const temp = data.main.temp;
@@ -285,13 +285,13 @@ function getCurrentPosition() {
 		navigator.geolocation.getCurrentPosition(resolve, reject);
 	});
 }
-STOCK_API_KEY = "4a228a53e5c941c78e529954bc69edc5";
+const stock_api_key = process.env.STOCK_API_KEY;
 
 // Get stock prices
 async function getStockPrices(ticker, price) {
 	try {
 		const response = await fetch(
-			`https://api.twelvedata.com/price?symbol=${ticker}&apikey=${STOCK_API_KEY}`
+			`https://api.twelvedata.com/price?symbol=${ticker}&apikey=${stock_api_key}`
 		);
 
 		const jsonResponse = await response.json();
