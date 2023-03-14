@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
 
 // Set up your API routes here
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 3000;
 
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
