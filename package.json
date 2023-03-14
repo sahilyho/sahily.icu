@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "commonjs": "^0.0.1",
     "dotenv": "^16.0.3",
     "mdb-ui-kit": "^6.2.0",
     "mdbootstrap": "^4.20.0",
