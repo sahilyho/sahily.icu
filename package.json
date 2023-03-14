@@ -1,7 +1,10 @@
 {
   "dependencies": {
+    "body-parser": "^1.20.2",
     "commonjs": "^0.0.1",
+    "cors": "^2.8.5",
     "dotenv": "^16.0.3",
+    "express": "^4.18.2",
     "mdb-ui-kit": "^6.2.0",
     "mdbootstrap": "^4.20.0",
     "netlify": "^13.1.2",

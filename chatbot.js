@@ -1,13 +1,17 @@
 /** @format */
-require("dotenv").config();
-app.on('ready', () => {
-    mainWindow = new BrowserWindow({
-        webPreferences: {
-            nodeIntegration: true,
-            contextIsolation: false,
-        }
-    });
-});
+fetch('http://localhost:5000/predict', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({ message: 'Hello' }) // Replace with your message
+})
+.then(response => response.json())
+.then(data => {
+  // Handle the response data here
+  console.log(data);
+})
+.catch(error => console.error(error));
 const sendBtn = document.getElementById("sendBtn");
 const textbox = document.getElementById("textbox");
 const chatContainer = document.getElementById("chatContainer");
