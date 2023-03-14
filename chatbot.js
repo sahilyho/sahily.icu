@@ -271,7 +271,7 @@ function processUserInput(e) {
 		analyzeMessage();
 	}
 }
-const weather_api_key = process.env.WEATHER_API_KEY;
+
 // Get the weather
 async function getWeather() {
 	try {
@@ -297,7 +297,6 @@ function getCurrentPosition() {
 		navigator.geolocation.getCurrentPosition(resolve, reject);
 	});
 }
-const stock_api_key = process.env.STOCK_API_KEY;
 
 // Get stock prices
 async function getStockPrices(ticker, price) {
