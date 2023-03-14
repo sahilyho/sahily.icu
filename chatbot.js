@@ -1,5 +1,13 @@
 /** @format */
 require("dotenv").config();
+app.on('ready', () => {
+    mainWindow = new BrowserWindow({
+        webPreferences: {
+            nodeIntegration: true,
+            contextIsolation: false,
+        }
+    });
+});
 const sendBtn = document.getElementById("sendBtn");
 const textbox = document.getElementById("textbox");
 const chatContainer = document.getElementById("chatContainer");
