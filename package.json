@@ -11,5 +11,9 @@
     "nodejs": "^0.0.0",
     "php": "^1.0.2",
     "requirejs": "^2.3.6"
+  },
+  "scripts": {
+    "build": "npm run-script",
+    "dev": "netlify dev"
   }
 }

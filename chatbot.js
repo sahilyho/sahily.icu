@@ -1,5 +1,5 @@
 /** @format */
-fetch('http://localhost:3000/predict', {
+fetch('http://localhost:3000/projects.html', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json'

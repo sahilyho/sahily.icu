@@ -139,6 +139,7 @@ celerybeat.pid
 *.sage.py
 
 # Environments
+.netlify
 .env
 .venv
 env/
